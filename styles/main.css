@@ -1,0 +1,90 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 20vh;
+    
+    font-family: giz-quadro;
+}
+
+.titulo {
+    font-size: 8vh;
+}
+
+#botaoIniciar {
+    font-family: giz-quadro;
+    font-size: 4vh;
+
+    padding: 2vh;
+
+    border: none;
+    border-radius: 12px;
+
+    color: #FFBF47;
+    background-color: #59A96A;
+
+    transition: 1s;
+}
+
+.rodape {
+    display: flex;
+
+    justify-content: flex-end;
+    height: 9vh;
+
+    font-family: giz-quadro;
+    color: #FFBF47;
+
+    font-size: 2.5vh;
+}
+
+.autores {
+    display: flex;
+    align-items: flex-end;
+}
+
+.autores ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.autores li a {
+   text-decoration: none;
+
+   color: #FFBF47;
+}
+
+.autores li:last-child {
+    margin-top: 0.5em;
+}
+
+@media (max-width: 425px)
+{
+    .rodape {    
+        font-size: 2vh;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .rodape {    
+        font-size: 1.5vh;
+    }
+}
+
+@media (max-width: 315px)
+{
+    .titulo {
+        font-size: 4vh;
+    }
+
+    #botaoIniciar {
+        font-size: 2vh;
+    }
+
+    .rodape {    
+        font-size: 1vh;
+    }
+}

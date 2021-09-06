@@ -1,0 +1,143 @@
+body {
+    padding: inherit;
+}
+
+main {
+    justify-content: space-between;
+
+    height: 74vh;   
+}
+
+#botaoVoltar{
+    display: inline-block;
+    position: relative;
+    
+    
+    font-family: giz-quadro;
+    color:white;
+
+    border-color: transparent;
+
+    font-size: 5vh;
+    background-color: transparent;
+
+    margin-top: 0.5em;
+}
+
+#botaoVoltar:hover{
+    text-shadow: 2px 0 0 rgb(25, 94, 158), -2px 0 0 rgb(25, 94, 158), 0 2px 0 rgb(25, 94, 158), 0 -2px 0 rgb(25, 94, 158), 1px 1px rgb(25, 94, 158), -1px -1px 0 rgb(25, 94, 158), 1px -1px 0 rgb(25, 94, 158), -1px 1px 0 rgb(25, 94, 158);
+}
+
+#divJogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgForca {
+    height: auto;
+    width: auto;
+
+    max-width: 30vw;
+    max-height: 45vh;
+}
+
+
+.espacos-letras {
+    display: flex;
+
+    justify-content: center;
+
+    font-family: giz-quadro;
+    font-size: 5vh;
+
+    margin-top: 4vh;
+}
+
+.espacos-letras .espacos-letras-label {
+    margin: 0 0 0 2vw;
+}
+
+#botoesAlfabetoContainer{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-row-gap: 1em;
+    grid-column-gap: 1vw;
+    padding-top: 7vh;
+}
+
+.botoesAlfabeto{
+    
+    display: inline-block;
+    position: relative;
+    
+    font-family: giz-quadro;
+    color:white;
+
+    border-color: transparent;
+
+    font-size: 5vh;
+    background-color: transparent;
+    
+}
+
+.botoesAlfabeto:hover{
+    text-shadow: 2px 0 0 rgb(25, 94, 158), -2px 0 0 rgb(25, 94, 158), 0 2px 0 rgb(25, 94, 158), 0 -2px 0 rgb(25, 94, 158), 1px 1px rgb(25, 94, 158), -1px -1px 0 rgb(25, 94, 158), 1px -1px 0 rgb(25, 94, 158), -1px 1px 0 rgb(25, 94, 158);
+}
+
+.botoesAlfabeto:disabled:hover{
+    text-shadow: none;
+}
+
+.botoesAlfabeto:disabled::before{
+    text-shadow: none;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 45%;
+    right: 0;
+    border-top: 2px solid;
+    border-color: red;
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20vh;
+}
+
+@media (max-width: 540px)
+{
+    #imgForca {
+        max-width: 52vw;
+    }
+
+    .espacos-letras {
+        font-size: 3vh;
+    }
+
+    #botoesAlfabetoContainer{
+        grid-template-columns: repeat(9, 2fr);
+    }
+
+    .botoesAlfabeto {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 320px)
+{
+    #imgForca {
+        max-width: 70vw;
+    }
+
+    #botoesAlfabetoContainer{
+        grid-template-columns: repeat(7, 2fr);
+    }
+}

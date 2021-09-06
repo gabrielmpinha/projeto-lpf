@@ -1,0 +1,27 @@
+@font-face {
+    font-family: giz-quadro;
+    src: url("../fontes-externas/mrchalk/MrChalk.otf");
+}
+
+body {
+    background-image: url("../images/background/background.jpg");
+    background-size: cover;
+
+    color: whitesmoke;
+
+    border: solid 3vh;
+
+    border-image: url("../images/background/borda.jpg") 20;
+}
+
+main {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    height: 65vh;   
+}
